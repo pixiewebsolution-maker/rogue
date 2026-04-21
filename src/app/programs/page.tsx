@@ -15,17 +15,18 @@ export default function ProgramsPage() {
         const gsap = gsapModule.default;
         const ScrollTriggerModule = await import("gsap/ScrollTrigger");
         const ScrollTrigger = ScrollTriggerModule.ScrollTrigger;
-        
+
         gsap.registerPlugin(ScrollTrigger);
 
         if (!containerRef.current) return;
-        
+
         ctx = gsap.context(() => {
           // Cinematic Text Blocks fade & slide up
           gsap.utils.toArray<HTMLElement>(".gta-text-block").forEach((block) => {
-            gsap.fromTo(block, 
+            gsap.fromTo(block,
               { opacity: 0, y: 60 },
-              { opacity: 1, y: 0, duration: 1.8, ease: "expo.out",
+              {
+                opacity: 1, y: 0, duration: 1.8, ease: "expo.out",
                 scrollTrigger: { trigger: block, start: "top 85%" }
               }
             );
@@ -35,9 +36,10 @@ export default function ProgramsPage() {
           gsap.utils.toArray<HTMLElement>(".gta-image-container").forEach((container) => {
             const imgWrapper = container.querySelector(".img-wrapper");
             if (imgWrapper) {
-              gsap.fromTo(imgWrapper, 
+              gsap.fromTo(imgWrapper,
                 { y: "-15%" },
-                { y: "15%", ease: "none",
+                {
+                  y: "15%", ease: "none",
                   scrollTrigger: { trigger: container, start: "top bottom", end: "bottom top", scrub: 1 }
                 }
               );
@@ -46,15 +48,16 @@ export default function ProgramsPage() {
 
           // Package Card Cinematic Reveal
           const packageCard = document.querySelector(".gta-package-card");
-          if(packageCard) {
+          if (packageCard) {
             gsap.fromTo(packageCard,
               { opacity: 0, scale: 0.95, y: 100, rotationX: 10 },
-              { opacity: 1, scale: 1, y: 0, rotationX: 0, duration: 2, ease: "power4.out", transformOrigin: "bottom center",
+              {
+                opacity: 1, scale: 1, y: 0, rotationX: 0, duration: 2, ease: "power4.out", transformOrigin: "bottom center",
                 scrollTrigger: { trigger: packageCard, start: "top 90%" }
               }
             );
           }
-          
+
         }, containerRef.current);
       } catch (err) { }
     };
@@ -71,7 +74,7 @@ export default function ProgramsPage() {
 
       {/* Expanded Program Details Section */}
       <section className="relative py-20 pb-32 px-5 max-w-7xl mx-auto overflow-hidden">
-        
+
         <div className="gta-text-block flex flex-col items-center text-center mb-24 lg:mb-32">
           <h2 className="font-display text-white text-5xl sm:text-6xl lg:text-7xl uppercase tracking-wider">
             Inside the <span className="text-gradient-red">Arena</span>
@@ -89,8 +92,8 @@ export default function ProgramsPage() {
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-[#060404] to-transparent opacity-90" />
             <div className="absolute bottom-6 left-8 right-8">
-               <h4 className="text-2xl font-display text-white tracking-widest uppercase mb-1">Live Combat Application</h4>
-               <p className="text-[11px] text-[#cc1a1a] tracking-[0.2em] font-bold uppercase">Weekly Scrimmages & Technical Sparring</p>
+              <h4 className="text-2xl font-display text-white tracking-widest uppercase mb-1">Live Combat Application</h4>
+              <p className="text-[11px] text-[#cc1a1a] tracking-[0.2em] font-bold uppercase">Weekly Scrimmages & Technical Sparring</p>
             </div>
           </div>
           <div className="gta-text-block flex flex-col gap-6">
@@ -99,7 +102,7 @@ export default function ProgramsPage() {
             </h3>
             <div className="w-12 h-px bg-[#cc1a1a]" />
             <p className="text-[#a07070] text-[15px] leading-loose">
-              Drilling builds the system, sparring tests the weapon. We enforce a strictly regulated, high-intensity live sparring culture. You learn to control distance, angle the pocket, and bite down on your mouthpiece when it counts. 
+              Drilling builds the system, sparring tests the weapon. We enforce a strictly regulated, high-intensity live sparring culture. You learn to control distance, angle the pocket, and bite down on your mouthpiece when it counts.
             </p>
             <p className="text-[#a07070] text-[15px] leading-loose">
               Our striking coaches analyze your flow states and identify micro-mistakes before they become habits. You will graduate from predictable routines into dynamic, unpredictable combat mastery.
@@ -136,10 +139,93 @@ export default function ProgramsPage() {
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-[#060404] to-transparent opacity-90" />
             <div className="absolute bottom-6 left-8 right-8">
-               <h4 className="text-2xl font-display text-white tracking-widest uppercase mb-1">Combat Athletics</h4>
-               <p className="text-[11px] text-[#cc1a1a] tracking-[0.2em] font-bold uppercase">Forging the Unbreakable Body</p>
+              <h4 className="text-2xl font-display text-white tracking-widest uppercase mb-1">Combat Athletics</h4>
+              <p className="text-[11px] text-[#cc1a1a] tracking-[0.2em] font-bold uppercase">Forging the Unbreakable Body</p>
             </div>
           </div>
+        </div>
+
+        {/* Feature 3: Kickboxing */}
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center mb-32">
+          <div className="gta-image-container relative aspect-[4/3] rounded-sm overflow-hidden border border-[#2a0f0f] shadow-[0_0_40px_rgba(204,26,26,0.08)]">
+            <div className="img-wrapper absolute inset-0 -top-[20%] h-[140%]">
+              <Image src="/ai_kickboxing.png" fill alt="Kickboxing" className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#060404] to-transparent opacity-90" />
+            <div className="absolute bottom-6 left-8 right-8">
+              <h4 className="text-2xl font-display text-white tracking-widest uppercase mb-1">Precision & Power</h4>
+              <p className="text-[11px] text-[#cc1a1a] tracking-[0.2em] font-bold uppercase">High-Performance Striking</p>
+            </div>
+          </div>
+          <div className="gta-text-block flex flex-col gap-6">
+            <h3 className="text-3xl lg:text-4xl font-display text-white uppercase tracking-wide">
+              Kickboxing
+            </h3>
+            <div className="w-12 h-px bg-[#cc1a1a]" />
+            <p className="text-[#a07070] text-[15px] leading-loose font-semibold italic text-white/80">
+              Engineered for Champions. Defined by Results.
+            </p>
+            <p className="text-[#a07070] text-[15px] leading-loose">
+              Our Kickboxing program delivers a high-performance training experience built on precision, discipline, and elite coaching standards. Athletes are developed through a structured pathway—from foundational mastery to advanced fight strategy—preparing them for state, national, and international competition.
+            </p>
+            <p className="text-[#a07070] text-[15px] leading-loose">
+              We don’t just train—we shape competitors, build resilience, and create champions who are ready to step into the ring and perform at the highest level.
+            </p>
+          </div>
+        </div>
+
+        {/* Feature 4: Wushu */}
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center mb-32">
+          <div className="gta-text-block order-2 md:order-1 flex flex-col gap-6">
+            <h3 className="text-3xl lg:text-4xl font-display text-white uppercase tracking-wide">
+              Wushu
+            </h3>
+            <div className="w-12 h-px bg-[#cc1a1a]" />
+            <p className="text-[#a07070] text-[15px] leading-loose font-semibold italic text-white/80">
+              Artistry Refined. Champions Forged.
+            </p>
+            <p className="text-[#a07070] text-[15px] leading-loose">
+              Our Wushu program embodies the perfect fusion of elegance and athletic excellence. Through disciplined training and technical precision, students progress from foundational movement to competition-level performance.
+            </p>
+            <p className="text-[#a07070] text-[15px] leading-loose">
+              With a strong focus on tournament preparation, performance quality, and medal-winning excellence, we cultivate athletes capable of representing at elite national and international stages.
+            </p>
+          </div>
+          <div className="gta-image-container order-1 md:order-2 relative aspect-[4/3] rounded-sm overflow-hidden border border-[#2a0f0f] shadow-[0_0_40px_rgba(204,26,26,0.08)]">
+            <div className="img-wrapper absolute inset-0 -top-[20%] h-[140%]">
+              <Image src="/ai_bjj.png" fill alt="Wushu" className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#060404] to-transparent opacity-90" />
+            <div className="absolute bottom-6 left-8 right-8">
+              <h4 className="text-2xl font-display text-white tracking-widest uppercase mb-1">Elegance & Athleticism</h4>
+              <p className="text-[11px] text-[#cc1a1a] tracking-[0.2em] font-bold uppercase">Competition-Level Performance</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Excellence Beyond Training Block */}
+        <div className="gta-text-block relative border border-[#2a0f0f] bg-[#0a0505] p-10 md:p-16 mb-20 max-w-4xl mx-auto shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[#060404] border border-[#2a0f0f] rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(204,26,26,0.2)]">
+            <span className="text-2xl">🏆</span>
+          </div>
+
+          <h3 className="text-3xl font-display text-center text-white uppercase tracking-widest mb-10 mt-4">
+            Excellence <span className="text-gradient-red">Beyond Training</span>
+          </h3>
+
+          <ul className="grid md:grid-cols-2 gap-8 text-left">
+            {[
+              "Professional coaching with competition-focused programs",
+              "Pathways to district, state, national & international championships",
+              "Performance-driven training with a focus on medals and results",
+              "A culture of discipline, prestige, and excellence"
+            ].map((item, idx) => (
+              <li key={idx} className="flex items-start gap-4">
+                <div className="w-2 h-2 mt-2 rounded-sm bg-[#cc1a1a] flex-shrink-0 transform rotate-45 shadow-[0_0_10px_rgba(204,26,26,0.8)]" />
+                <span className="text-[15px] text-[#b89090] leading-relaxed tracking-wide">{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Packages Section */}
@@ -162,21 +248,21 @@ export default function ProgramsPage() {
                 </span>
               </div>
             </div>
-            
+
             <div className="px-6 pb-12 pt-10 sm:px-12 flex flex-col items-center text-center relative z-10 bg-[#0a0505]">
               <div className="absolute top-0 right-4 sm:right-10 transform -translate-y-1/2 z-20">
-                 <div className="bg-[#cc1a1a] text-white font-display text-2xl sm:text-3xl px-8 py-3 tracking-widest shadow-[0_10px_30px_rgba(204,26,26,0.5)]" style={{ clipPath: "polygon(5% 0, 100% 0, 95% 100%, 0 100%)" }}>
-                   5999₹
-                 </div>
+                <div className="bg-[#cc1a1a] text-white font-display text-2xl sm:text-3xl px-8 py-3 tracking-widest shadow-[0_10px_30px_rgba(204,26,26,0.5)]" style={{ clipPath: "polygon(5% 0, 100% 0, 95% 100%, 0 100%)" }}>
+                  5999₹
+                </div>
               </div>
-              
+
               <h3 className="text-3xl sm:text-5xl font-display text-white italic tracking-wide uppercase mt-4 mb-2 group-hover:text-[#cc1a1a] transition-all duration-500">
                 Pre-Fight Camps
               </h3>
               <p className="text-[#a07070] text-[11px] sm:text-xs tracking-[0.3em] font-bold uppercase mb-10">
                 Prepare For Your Next Fight
               </p>
-              
+
               <div className="w-full flex flex-col items-center">
                 <h4 className="text-white text-[14px] tracking-[0.1em] font-semibold mb-8 border-b border-[#2a0f0f] pb-4 inline-block px-4 sm:px-8">6 WEEKS OF CAMP LIFE</h4>
                 <ul className="flex flex-col gap-5 text-left w-full max-w-sm mx-auto">
@@ -193,9 +279,9 @@ export default function ProgramsPage() {
                   ))}
                 </ul>
               </div>
-              
-              <button 
-                onClick={() => window.location.href = '/contact'} 
+
+              <button
+                onClick={() => window.location.href = '/contact'}
                 className="mt-12 px-12 py-5 border border-[#cc1a1a] text-[#cc1a1a] uppercase tracking-widest text-[11px] sm:text-xs font-bold hover:bg-[#cc1a1a] hover:text-white transition-all duration-500 shadow-[0_0_0_inset_rgba(204,26,26,0)] hover:shadow-[0_0_30px_rgba(204,26,26,0.6)]"
               >
                 Enroll Now
