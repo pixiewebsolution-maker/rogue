@@ -149,7 +149,7 @@ export default function ProgramsPage() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center mb-32">
           <div className="gta-image-container relative aspect-[4/3] rounded-sm overflow-hidden border border-[#2a0f0f] shadow-[0_0_40px_rgba(204,26,26,0.08)]">
             <div className="img-wrapper absolute inset-0 -top-[20%] h-[140%]">
-              <Image src="/ai_kickboxing.png" fill alt="Kickboxing" className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              <Image src="/kickboxing.jpeg" fill alt="Kickboxing" className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-[#060404] to-transparent opacity-90" />
             <div className="absolute bottom-6 left-8 right-8">
@@ -193,7 +193,7 @@ export default function ProgramsPage() {
           </div>
           <div className="gta-image-container order-1 md:order-2 relative aspect-[4/3] rounded-sm overflow-hidden border border-[#2a0f0f] shadow-[0_0_40px_rgba(204,26,26,0.08)]">
             <div className="img-wrapper absolute inset-0 -top-[20%] h-[140%]">
-              <Image src="/ai_bjj.png" fill alt="Wushu" className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              <Image src="/wushu.jpeg" fill alt="Wushu" className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-[#060404] to-transparent opacity-90" />
             <div className="absolute bottom-6 left-8 right-8">
@@ -240,7 +240,7 @@ export default function ProgramsPage() {
           {/* Pre-Fight Camp Package */}
           <div className="gta-package-card relative group rounded-sm overflow-hidden border border-[#2a0f0f] hover:border-[#cc1a1a]/60 transition-all duration-700 max-w-2xl mx-auto w-full bg-[#0a0505] shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_60px_rgba(204,26,26,0.15)]">
             <div className="aspect-[16/9] relative w-full border-b border-[#2a0f0f] overflow-hidden">
-              <Image src="/ai_pre_fight_camp.png" fill alt="Pre-Fight Camps" className="object-cover transform transition-transform duration-1000 group-hover:scale-110" sizes="(max-width: 768px) 100vw, 800px" />
+              <Image src="/prefight.jpeg" fill alt="Pre-Fight Camps" className="object-cover transform transition-transform duration-1000 group-hover:scale-110" sizes="(max-width: 768px) 100vw, 800px" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0505] via-[rgba(10,5,5,0.2)] to-transparent opacity-100" />
               <div className="absolute top-4 left-4 z-10">
                 <span className="text-[9px] tracking-[0.2em] font-bold uppercase px-3 py-1.5 bg-black/80 border border-[#cc1a1a]/40 text-[#cc1a1a] backdrop-blur-sm">

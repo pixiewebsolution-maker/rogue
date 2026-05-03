@@ -55,26 +55,28 @@ export default function Navbar() {
 
           {/* Desktop links */}
           <ul className="hidden md:flex items-center gap-1 lg:gap-2">
-            {NAV_LINKS.map(({ label, href }) => (
+            {NAV_LINKS.map(({ label, href }) => {
+              const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+              return (
               <li key={href}>
                 <Link
                   href={href}
                   onClick={() => setMenuOpen(false)}
-                  className={`relative px-4 lg:px-5 py-[22px] text-[11px] font-medium tracking-[0.22em] uppercase block
+                  className={`relative px-4 lg:px-5 py-[22px] text-[11px] font-bold tracking-[0.22em] uppercase block
                               transition-colors duration-300
-                              ${pathname === href ? "text-white" : "text-[#c4b5d4] hover:text-white"}`}
+                              ${isActive ? "text-[#cc1a1a]" : "text-[#c4b5d4] hover:text-white"}`}
                 >
                   {label}
-                  {pathname === href && (
+                  {isActive && (
                     <motion.span
                       layoutId="nav-indicator"
-                      className="absolute bottom-0 left-4 lg:left-5 right-4 lg:right-5 h-[2px] bg-[#7c3aed] rounded-full"
-                      style={{ boxShadow: "0 0 12px rgba(124,58,237,.8)" }}
+                      className="absolute bottom-0 left-4 lg:left-5 right-4 lg:right-5 h-[2px] bg-[#cc1a1a] rounded-full"
+                      style={{ boxShadow: "0 0 12px rgba(204,26,26,.8)" }}
                     />
                   )}
                 </Link>
               </li>
-            ))}
+            )})}
           </ul>
 
           {/* CTA */}
@@ -133,7 +135,9 @@ export default function Navbar() {
             <div className="h-[68px] flex-shrink-0" />
 
             <nav className="relative z-10 flex flex-col items-start px-8 pt-10 gap-6 flex-1">
-              {NAV_LINKS.map(({ label, href }, i) => (
+              {NAV_LINKS.map(({ label, href }, i) => {
+                const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+                return (
                 <motion.div
                   key={href}
                   initial={{ opacity: 0, x: -24 }}
@@ -144,13 +148,13 @@ export default function Navbar() {
                   <Link
                     href={href}
                     onClick={() => setMenuOpen(false)}
-                    className={`font-display text-[52px] leading-none tracking-widest uppercase block
-                                ${pathname === href ? "text-[#9333ea]" : "text-[#d4c5e8] hover:text-white"}`}
+                    className={`font-display text-[52px] leading-none tracking-widest uppercase block transition-colors duration-300
+                                ${isActive ? "text-[#cc1a1a]" : "text-[#d4c5e8] hover:text-white"}`}
                   >
                     {label}
                   </Link>
                 </motion.div>
-              ))}
+              )})}
 
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
