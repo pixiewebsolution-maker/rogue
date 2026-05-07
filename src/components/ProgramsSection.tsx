@@ -127,7 +127,10 @@ export default function ProgramsSection() {
             </div>
 
             <div className="flex-1 text-center md:text-left">
-              <h3 className="font-display text-2xl lg:text-3xl text-white uppercase tracking-widest mb-4">Excellence Beyond Training</h3>
+              <h3 className="font-display text-2xl lg:text-3xl text-white uppercase tracking-widest mb-2">Excellence Beyond Training</h3>
+              <p className="text-[#a78bda] text-[13px] leading-relaxed mb-5 italic font-medium">
+                "A proven pathway to excellence — producing 20 National Champions, 50+ State Champions, and 100+ District Champions."
+              </p>
               <ul className="flex flex-col gap-3">
                 {[
                   "Professional coaching with competition-focused programs",

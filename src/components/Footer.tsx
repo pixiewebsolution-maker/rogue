@@ -30,6 +30,14 @@ export default function Footer() {
           >
             Instagram
           </a>
+          <a
+            href="https://youtube.com/@rogueninjafc?si=u2U6WndizWEIhHuk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[9px] tracking-[0.2em] uppercase text-[#5b4a80] hover:text-[#cc1a1a] transition-colors duration-300"
+          >
+            YouTube
+          </a>
         </div>
       </div>
     </footer>

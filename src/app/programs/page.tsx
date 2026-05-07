@@ -209,9 +209,17 @@ export default function ProgramsPage() {
             <span className="text-2xl">🏆</span>
           </div>
 
-          <h3 className="text-3xl font-display text-center text-white uppercase tracking-widest mb-10 mt-4">
+          <h3 className="text-3xl font-display text-center text-white uppercase tracking-widest mb-6 mt-4">
             Excellence <span className="text-gradient-red">Beyond Training</span>
           </h3>
+
+          <div className="flex flex-col items-center mb-12">
+            <div className="w-16 h-px bg-[#cc1a1a]/30 mb-6" />
+            <p className="text-center text-[#b89090] text-base lg:text-lg max-w-2xl mx-auto font-medium tracking-wide italic leading-relaxed px-4">
+              "A proven pathway to excellence — producing 20 National Champions, 50+ State Champions, and 100+ District Champions."
+            </p>
+            <div className="w-16 h-px bg-[#cc1a1a]/30 mt-6" />
+          </div>
 
           <ul className="grid md:grid-cols-2 gap-8 text-left">
             {[

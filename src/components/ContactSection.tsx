@@ -232,11 +232,14 @@ export default function ContactSection() {
             <div>
               <p className="text-[9px] tracking-[0.3em] uppercase text-[#6b5a8e] mb-4">Follow Us</p>
               <div className="flex gap-4">
-                {["Instagram"].map(s => (
-                  <a key={s} href="https://www.instagram.com/rogueninjafc"
+                {[
+                  { name: "Instagram", url: "https://www.instagram.com/rogueninjafc" },
+                  { name: "YouTube", url: "https://youtube.com/@rogueninjafc?si=u2U6WndizWEIhHuk" }
+                ].map(s => (
+                  <a key={s.name} href={s.url} target="_blank" rel="noopener noreferrer"
                     className="text-[10px] tracking-[0.2em] uppercase py-2.5 px-4 border border-[#1a0f2e]
-                               text-[#9d8bba] hover:border-[#7c3aed] hover:text-white transition-all duration-300">
-                    {s}
+                               text-[#9d8bba] hover:border-[#cc1a1a] hover:text-white transition-all duration-300">
+                    {s.name}
                   </a>
                 ))}
               </div>

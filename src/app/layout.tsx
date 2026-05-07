@@ -205,6 +205,7 @@ export default function RootLayout({
     sameAs: [
       "https://www.instagram.com/rogueninja_fc",
       "https://www.facebook.com/rogueninja_fc",
+      "https://youtube.com/@rogueninjafc?si=u2U6WndizWEIhHuk",
     ],
     sport: ["Kickboxing", "Muay Thai", "MMA", "Brazilian Jiu-Jitsu", "Boxing"],
     hasMap: "https://maps.app.goo.gl/cy8rrgsP9P9gbr2s9",
