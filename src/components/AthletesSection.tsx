@@ -41,6 +41,7 @@ const athletes = [
     subtitle: "National-Level Kickboxing Champion",
     image: "/athlete1.jpg",
     imagePosition: "center 25%",
+    badge: "Striking Coach",
     achievements: [
       "WAKO India Kickboxing National Championship 2025 – Gold Medal",
       "WAKO India Kickboxing National Championship 2024 – Bronze Medal",
@@ -57,6 +58,7 @@ const athletes = [
     subtitle: "Striking MMA & Muay Thai Champion",
     image: "/athlete2.jpg",
     imagePosition: "center 15%",
+    badge: "Performance coach (Fitness & Conditioning)",
     achievements: [
       "2× Striking MMA State Championship – Gold Medal",
       "Muay Thai State Championship – Gold Medal",
@@ -71,10 +73,11 @@ const athletes = [
     subtitle: "Kickboxing & Wushu Champion",
     image: "/athlete3.jpg",
     imagePosition: "center 70%",
+    badge: "Striking Coach",
     achievements: [
       "Kickboxing National Medalist",
       "All India Wushu Player",
-      "4× Intercollege Wushu Champion",
+      "4× Inter-college Wushu Champion",
       "State Wushu & Kickboxing Champion",
     ],
     description:
@@ -264,6 +267,14 @@ export default function AthletesSection() {
                   style={{ objectPosition: athlete.imagePosition || "center" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
+                {/* Badge Overlay */}
+                {athlete.badge && (
+                  <div className="absolute top-3 left-3 z-30">
+                    <span className="px-2.5 py-1 text-[8px] tracking-[0.2em] font-bold uppercase bg-[#cc1a1a] text-white rounded-full shadow-[0_0_10px_rgba(204,26,26,0.5)]">
+                      {athlete.badge}
+                    </span>
+                  </div>
+                )}
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b0811] via-transparent to-transparent opacity-90" />
               </div>
