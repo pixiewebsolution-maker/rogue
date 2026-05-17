@@ -35,13 +35,15 @@ const GALLERIES: Record<string, { src: string; alt: string }[]> = {
   ],
   crew: [
     { src: "/gallery/THE CREW/IMG_0029.webp", alt: "The Rogue Crew" },
-    { src: "/gallery/THE CREW/IMG_0623.webp", alt: "Team Training" },
-    { src: "/gallery/THE CREW/IMG_3126.webp", alt: "Dojo Gathering" },
+    { src: "/gallery/THE CREW/35.webp", alt: "Team Photo 35" },
+    { src: "/gallery/THE CREW/DSC09514.JPG.webp", alt: "Group Photo" },
+    { src: "/gallery/THE CREW/IMG_6181.webp", alt: "Dojo Gathering" },
   ],
   conditioning: [
     { src: "/gallery/WARRIOR CONDITIONING/IMG_0582.webp", alt: "Weight Training" },
     { src: "/gallery/WARRIOR CONDITIONING/IMG_0587.webp", alt: "Endurance Test" },
-    { src: "/gallery/WARRIOR CONDITIONING/IMG_0589.webp", alt: "Core Blast" },
+    { src: "/gallery/WARRIOR CONDITIONING/IMG_3124.webp", alt: "Warrior Drill" },
+    { src: "/gallery/WARRIOR CONDITIONING/IMG_3515.webp", alt: "Core Blast" },
   ],
 };
 

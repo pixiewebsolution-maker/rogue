@@ -95,7 +95,7 @@ export default function CustomCursor() {
     <>
       {/* Trail 2 */}
       <motion.div
-        className="fixed top-0 left-0 z-[9998] pointer-events-none"
+        className="fixed top-0 left-0 z-[999997] pointer-events-none"
         style={{ x: trail2X, y: trail2Y, rotate: rotationTransform }}
         animate={{ opacity: isHovering || isClicking ? 0 : 0.2, scale: 0.6 }}
       >
@@ -108,7 +108,7 @@ export default function CustomCursor() {
 
       {/* Trail 1 */}
       <motion.div
-        className="fixed top-0 left-0 z-[9999] pointer-events-none"
+        className="fixed top-0 left-0 z-[999998] pointer-events-none"
         style={{ x: trail1X, y: trail1Y, rotate: rotationTransform }}
         animate={{ opacity: isHovering || isClicking ? 0 : 0.4, scale: 0.8 }}
       >
@@ -121,7 +121,7 @@ export default function CustomCursor() {
 
       {/* Main Cursor */}
       <motion.div
-        className="fixed top-0 left-0 z-[10000] pointer-events-none flex items-center justify-center transition-shadow duration-300"
+        className="fixed top-0 left-0 z-[999999] pointer-events-none flex items-center justify-center transition-shadow duration-300"
         style={{
           x: smoothX,
           y: smoothY,
