@@ -1,1 +1,0 @@
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,78299,e=>{"use strict";var t=e.i(43476),i=e.i(17683);e.s(["default",0,function(){return(0,t.jsx)("main",{className:"bg-[#060404] text-white min-h-screen overflow-x-hidden pt-[68px]",children:(0,t.jsx)(i.default,{})})}])}]);
