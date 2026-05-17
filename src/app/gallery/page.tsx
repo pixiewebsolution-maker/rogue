@@ -6,11 +6,11 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 
 const GALLERY_IMAGES: Record<string, string[]> = {
   all: [
-    "/gallery/33.webp", "/gallery/34.webp", "/gallery/img1.webp", "/gallery/img2.webp", 
+    "/gallery/34.webp", "/gallery/img1.webp", "/gallery/img2.webp", 
     "/gallery/img3.webp", "/gallery/img4.webp", "/gallery/img5.webp", "/gallery/img6.webp",
     "/gallery/8.webp", "/gallery/10.webp", "/gallery/12.webp", "/gallery/16.webp",
     "/gallery/17.webp", "/gallery/18.webp", "/gallery/19.webp", "/gallery/21.webp",
-    "/gallery/30.webp", "/gallery/bg-image.webp",
+    "/gallery/30.webp",
   ],
   battle: [
     "/gallery/BATTLE FIELD/23cbaf83-a446-42b8-a818-f706389790ee.webp",
@@ -37,7 +37,6 @@ const GALLERY_IMAGES: Record<string, string[]> = {
     "/gallery/HALL OF LEGENDS/IMG_6333.webp",
     "/gallery/HALL OF LEGENDS/a64da47c-589d-4a8a-861f-ffed18c67a87.webp",
     "/gallery/HALL OF LEGENDS/c212682c-1268-4f3a-9399-ebc22722459b.webp",
-    "/gallery/HALL OF LEGENDS/ca526cb8-db32-4e15-8417-7249c89f47c2.webp",
     "/gallery/HALL OF LEGENDS/d208e5b6-9e50-497e-9890-cdbe8c54c454.webp",
     "/gallery/HALL OF LEGENDS/e84a69ba-4c3b-476f-a2a8-fb6dfc972ec7.webp",
   ],
