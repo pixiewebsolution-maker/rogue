@@ -8,10 +8,9 @@ const GALLERY_IMAGES: Record<string, string[]> = {
   all: [
     "/gallery/33.webp", "/gallery/34.webp", "/gallery/img1.webp", "/gallery/img2.webp", 
     "/gallery/img3.webp", "/gallery/img4.webp", "/gallery/img5.webp", "/gallery/img6.webp",
-    "/gallery/7.webp", "/gallery/8.webp", "/gallery/9.webp", "/gallery/10.webp",
-    "/gallery/12.webp", "/gallery/15.webp", "/gallery/16.webp", "/gallery/17.webp",
-    "/gallery/18.webp", "/gallery/19.webp", "/gallery/21.webp", "/gallery/29.webp",
-    "/gallery/30.webp", "/gallery/31.webp", "/gallery/bg-image.webp",
+    "/gallery/8.webp", "/gallery/10.webp", "/gallery/12.webp", "/gallery/16.webp",
+    "/gallery/17.webp", "/gallery/18.webp", "/gallery/19.webp", "/gallery/21.webp",
+    "/gallery/30.webp", "/gallery/bg-image.webp",
   ],
   battle: [
     "/gallery/BATTLE FIELD/23cbaf83-a446-42b8-a818-f706389790ee.webp",

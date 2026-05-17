@@ -19,7 +19,7 @@ const GALLERIES: Record<string, { src: string; alt: string }[]> = {
     { src: "/gallery/img3.webp", alt: "Rogue Ninja Training 3" },
     { src: "/gallery/img4.webp", alt: "Rogue Ninja Training 4" },
     { src: "/gallery/img6.webp", alt: "Rogue Ninja Training 6" },
-    { src: "/gallery/7.webp",    alt: "Rogue Ninja Fight Club 7" },
+    { src: "/gallery/8.webp",    alt: "Rogue Ninja Fight Club 8" },
     { src: "/gallery/21.webp",    alt: "Rogue Ninja Fight Club 21" },
   ],
   battle: [
