@@ -169,6 +169,21 @@ export default function GalleryPage() {
     setVisibleCount(PAGE_SIZE);
   }, [activeTab]);
 
+  // Refresh GSAP ScrollTrigger & Lenis whenever layout height changes due to visibleCount or activeTab
+  useEffect(() => {
+    const timer = setTimeout(async () => {
+      try {
+        const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+        ScrollTrigger.refresh();
+      } catch (err) {
+        console.error("ScrollTrigger refresh failed:", err);
+      }
+      window.dispatchEvent(new Event("resize"));
+    }, 150);
+
+    return () => clearTimeout(timer);
+  }, [visibleCount, activeTab]);
+
   const loadMore = () => {
     setVisibleCount(prev => Math.min(prev + PAGE_SIZE, currentImages.length));
   };
