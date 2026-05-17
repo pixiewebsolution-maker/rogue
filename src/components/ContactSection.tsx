@@ -124,22 +124,8 @@ export default function ContactSection() {
 
             {/* Contact details */}
             {[
-              { 
-                label: "Phone", 
-                value: (
-                  <>
-                    <a href="tel:+917356330770" className="hover:text-white transition-colors">+91 73563 30770</a>
-                    {"  ·  "}
-                    <a href="tel:+919048564432" className="hover:text-white transition-colors">+91 90485 64432</a>
-                  </>
-                ), 
-                icon: faPhone 
-              },
-              { 
-                label: "Email", 
-                value: <a href="mailto:rogueninjafc@gmail.com" className="hover:text-white transition-colors">rogueninjafc@gmail.com</a>, 
-                icon: faEnvelope 
-              },
+              { label: "Phone", value: "+91 73563 30770  ·  +91 90485 64432", icon: faPhone },
+              { label: "Email", value: "rogueninjafc@gmail.com", icon: faEnvelope },
               { label: "Hours", value: "Mon–Sat: 06:00 – 21:00 · Sun: 08:00 – 14:00", icon: faClock },
             ].map(item => (
               <div key={item.label} className="flex items-start gap-4 pb-5 border-b border-[#1e0707]">
@@ -283,7 +269,7 @@ export default function ContactSection() {
                 <label htmlFor="contact-name" className="text-[10px] tracking-[0.3em] uppercase text-[#a07070]">
                   Full Name <span className="text-[#cc1a1a]">*</span>
                 </label>
-                <input suppressHydrationWarning id="contact-name" name="name" type="text" required placeholder="Your name"
+                <input id="contact-name" name="name" type="text" required placeholder="Your name"
                   value={formData.name} onChange={handleChange}
                   onFocus={() => setFocused("name")} onBlur={() => setFocused(null)}
                   className={inputCls("name")} />
@@ -293,7 +279,7 @@ export default function ContactSection() {
                 <label htmlFor="contact-phone" className="text-[10px] tracking-[0.3em] uppercase text-[#a07070]">
                   Phone <span className="text-[#cc1a1a]">*</span>
                 </label>
-                <input suppressHydrationWarning id="contact-phone" name="phone" type="tel" required placeholder="+91 00000 00000"
+                <input id="contact-phone" name="phone" type="tel" required placeholder="+91 00000 00000"
                   value={formData.phone} onChange={handleChange}
                   onFocus={() => setFocused("phone")} onBlur={() => setFocused(null)}
                   className={inputCls("phone")} />
@@ -304,7 +290,7 @@ export default function ContactSection() {
                 <label htmlFor="contact-branch" className="text-[10px] tracking-[0.3em] uppercase text-[#a07070]">
                   Preferred Branch
                 </label>
-                <select suppressHydrationWarning id="contact-branch" name="branch"
+                <select id="contact-branch" name="branch"
                   value={formData.branch} onChange={handleChange}
                   onFocus={() => setFocused("branch")} onBlur={() => setFocused(null)}
                   className={inputCls("branch")} style={{ backgroundImage: "none" }}>
@@ -319,13 +305,13 @@ export default function ContactSection() {
                 <label htmlFor="contact-message" className="text-[10px] tracking-[0.3em] uppercase text-[#a07070]">
                   Message
                 </label>
-                <textarea suppressHydrationWarning id="contact-message" name="message" rows={5} placeholder="Tell us about your goals…"
+                <textarea id="contact-message" name="message" rows={5} placeholder="Tell us about your goals…"
                   value={formData.message} onChange={handleChange}
                   onFocus={() => setFocused("message")} onBlur={() => setFocused(null)}
                   className={inputCls("message") + " resize-none"} />
               </div>
 
-              <button suppressHydrationWarning type="submit" id="contact-submit"
+              <button type="submit" id="contact-submit"
                 className="mt-2 py-4 text-[11px] tracking-[0.25em] uppercase font-semibold
                            bg-[#cc1a1a] text-white hover:bg-[#dd2222] transition-all duration-300
                            hover:shadow-[0_0_40px_rgba(200,20,20,.4)]">

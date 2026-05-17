@@ -7,6 +7,7 @@ export default function CustomCursor() {
   const [isClicking, setIsClicking] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   // High performance motion values
   const cursorX = useMotionValue(-100);
@@ -34,6 +35,21 @@ export default function CustomCursor() {
   const rotationTransform = useTransform(velocityX, [-1500, 0, 1500], [-40, 0, 40]);
 
   useEffect(() => {
+    const checkIsMobile = () => {
+      const hasCoarse = window.matchMedia("(pointer: coarse)").matches;
+      const isSmallScreen = window.innerWidth < 1024;
+      setIsMobile(hasCoarse || isSmallScreen);
+    };
+
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+
+    if (isMobile) {
+      return () => {
+        window.removeEventListener("resize", checkIsMobile);
+      };
+    }
+
     const updateMousePosition = (e: MouseEvent) => {
       cursorX.set(e.clientX - 12); // Offset to center the shuriken
       cursorY.set(e.clientY - 12);
@@ -63,6 +79,7 @@ export default function CustomCursor() {
     document.addEventListener("mouseenter", handleMouseEnter);
 
     return () => {
+      window.removeEventListener("resize", checkIsMobile);
       window.removeEventListener("mousemove", updateMousePosition);
       window.removeEventListener("mouseover", handleMouseOver);
       window.removeEventListener("mousedown", handleMouseDown);
@@ -70,9 +87,9 @@ export default function CustomCursor() {
       document.removeEventListener("mouseleave", handleMouseLeave);
       document.removeEventListener("mouseenter", handleMouseEnter);
     };
-  }, [isVisible, cursorX, cursorY]);
+  }, [isVisible, cursorX, cursorY, isMobile]);
 
-  if (!isVisible) return null;
+  if (isMobile || !isVisible) return null;
 
   return (
     <>

@@ -225,7 +225,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full bg-[#060404] text-white overflow-x-hidden cursor-none">
+      <body className="min-h-full bg-[#060404] text-white overflow-x-hidden">
         <CustomCursor />
         <PreloaderWrapper />
         <SmoothScroll />

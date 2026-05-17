@@ -20,7 +20,9 @@
 }
 
 /* ── Reset / base ──────────────────────────────────────────────── */
-* { cursor: none !important; }
+@media (pointer: fine) {
+  * { cursor: none !important; }
+}
 
 html {
   min-height: 100%;
