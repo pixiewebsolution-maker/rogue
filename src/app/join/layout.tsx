@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       "Choose your plan — Warrior, Fighter, or Champion. First class free. No prior experience needed. Apply now and start your combat sports journey in Thiruvananthapuram.",
     url: "https://rogueninja.in/join",
-    images: [{ url: "/newLogo.png", width: 1200, height: 630, alt: "Join RogueNinja FC" }],
+    images: [{ url: "/newLogo.webp", width: 1200, height: 630, alt: "Join RogueNinja FC" }],
   },
 };
 

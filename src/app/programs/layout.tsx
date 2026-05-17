@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       "Kickboxing, Muay Thai, MMA, BJJ & S&C programs. Pre-fight camp packages. Train with national champions in Thiruvananthapuram, Kerala.",
     url: "https://rogueninja.in/programs",
-    images: [{ url: "/newLogo.png", width: 1200, height: 630, alt: "RogueNinja FC Training Programs" }],
+    images: [{ url: "/newLogo.webp", width: 1200, height: 630, alt: "RogueNinja FC Training Programs" }],
   },
 };
 

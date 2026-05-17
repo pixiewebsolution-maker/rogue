@@ -85,7 +85,7 @@ export default function AboutSection() {
           <div ref={imageRef} className="relative mt-8 lg:mt-0">
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm border border-[#1a0f2e]">
               <Image
-                src="/newImg.jpeg" alt="Training at Rogue Ninja Dojo"
+                src="/newImg.webp" alt="Training at Rogue Ninja Dojo"
                 fill className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />

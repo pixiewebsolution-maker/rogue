@@ -8,7 +8,7 @@ const featuredAthletes = [
     id: "athlete-featured-1",
     name: "ABHIJITH KRISHNAN",
     subtitle: "Head Coach & Founder",
-    image: "/head_coach.PNG",
+    image: "/head_coach.webp",
     imagePosition: "center 30%",
     badge: "★ HEAD COACH",
     achievements: [
@@ -25,7 +25,7 @@ const featuredAthletes = [
     id: "athlete-featured-2",
     name: "ANANDHA KRISHNAN G S",
     subtitle: "Manager / Founder",
-    image: "/founder.jpeg",
+    image: "/founder.webp",
     imagePosition: "center 15%",
     badge: "★ MANAGER",
     achievements: ["Kickboxing State Champion", "Wushu University Champion"],
@@ -39,7 +39,7 @@ const athletes = [
     id: "athlete-1",
     name: "ABHIRAMI GS",
     subtitle: "National-Level Kickboxing Champion",
-    image: "/athlete1.jpg",
+    image: "/athlete1.webp",
     imagePosition: "center 25%",
     badge: "Striking Coach",
     achievements: [
@@ -56,7 +56,7 @@ const athletes = [
     id: "athlete-2",
     name: "JIBIN BABU TV",
     subtitle: "Striking MMA & Muay Thai Champion",
-    image: "/athlete2.jpg",
+    image: "/athlete2.webp",
     imagePosition: "center 15%",
     badge: "Performance coach (Fitness & Conditioning)",
     achievements: [
@@ -71,7 +71,7 @@ const athletes = [
     id: "athlete-3",
     name: "SACHIN BS",
     subtitle: "Kickboxing & Wushu Champion",
-    image: "/athlete3.jpg",
+    image: "/athlete3.webp",
     imagePosition: "center 70%",
     badge: "Striking Coach",
     achievements: [

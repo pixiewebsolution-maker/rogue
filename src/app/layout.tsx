@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     title: "Rogue Ninja Fight Club | Train Like a Fighter. Live Like a Warrior.",
     description:
       "Kerala's premier combat sports academy. Kickboxing, Muay Thai, MMA & strength training in Thiruvananthapuram.",
-    images: ["/newLogo.PNG"],
+    images: ["/newLogo.webp"],
     site: "@rogueninja_fc",
     creator: "@rogueninja_fc",
   },
@@ -141,8 +141,8 @@ export default function RootLayout({
     name: "Rogue Ninja Fight Club",
     alternateName: "RogueNinja FC",
     url: "https://rogueninja.in",
-    logo: "https://rogueninja.in/logo.PNG",
-    image: "https://rogueninja.in/newLogo.PNG",
+    logo: "https://rogueninja.in/logo.webp",
+    image: "https://rogueninja.in/newLogo.webp",
     description:
       "Kerala's premier combat sports academy specialising in Kickboxing, Muay Thai, MMA and Strength & Conditioning. National champions forged here.",
     telephone: ["+917356330770", "+919048564432"],
@@ -218,7 +218,7 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/logo.PNG" />
+        <link rel="apple-touch-icon" href="/logo.webp" />
         <link rel="canonical" href="https://rogueninja.in" />
         <script
           type="application/ld+json"

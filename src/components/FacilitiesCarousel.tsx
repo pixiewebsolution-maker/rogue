@@ -5,12 +5,12 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const galleryImages = [
-  "/gallery/WARRIOR CONDITIONING/IMG_0582.PNG",
-  "/gallery/WARRIOR CONDITIONING/IMG_0587.PNG",
-  "/gallery/WARRIOR CONDITIONING/IMG_0589.PNG",
-  "/gallery/WARRIOR CONDITIONING/IMG_0631.PNG",
-  "/gallery/WARRIOR CONDITIONING/IMG_1940.PNG",
-  "/gallery/WARRIOR CONDITIONING/IMG_3124.PNG"
+  "/gallery/WARRIOR CONDITIONING/IMG_0582.webp",
+  "/gallery/WARRIOR CONDITIONING/IMG_0587.webp",
+  "/gallery/WARRIOR CONDITIONING/IMG_0589.webp",
+  "/gallery/WARRIOR CONDITIONING/IMG_0631.webp",
+  "/gallery/WARRIOR CONDITIONING/IMG_1940.webp",
+  "/gallery/WARRIOR CONDITIONING/IMG_3124.webp"
 ];
 
 export default function FacilitiesCarousel() {

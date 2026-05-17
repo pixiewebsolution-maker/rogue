@@ -103,7 +103,7 @@ export default function HeroSection() {
         {/* Logo */}
         <div ref={logoRef} style={{ opacity: 0 }} className="logo-flicker-anim mt-10 w-full flex justify-center">
           <Image
-            src="/logo.png" alt="Rogue Ninja Fight Club"
+            src="/logo.webp" alt="Rogue Ninja Fight Club"
             width={780} height={220} priority
             className="w-full max-w-[310px] sm:max-w-[400px] md:max-w-[560px] lg:max-w-[680px] xl:max-w-[780px] h-auto select-none"
             style={{ filter:"drop-shadow(0 0 40px rgba(124,58,237,.65)) drop-shadow(0 0 100px rgba(100,20,200,.35))" }}

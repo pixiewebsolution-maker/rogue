@@ -45,7 +45,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0" aria-label="Home" onClick={() => setMenuOpen(false)}>
             <Image
-              src="/logo.png" alt="Rogue Ninja Fight Club"
+              src="/logo.webp" alt="Rogue Ninja Fight Club"
               width={160} height={44}
               priority
               className="h-11 sm:h-10 w-auto"
@@ -178,7 +178,7 @@ export default function Navbar() {
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}
               className="relative z-10 px-8 pb-10 flex items-center justify-between"
             >
-              <Image src="/logo.png" alt="" width={120} height={34} className="h-8 w-auto opacity-40" />
+              <Image src="/logo.webp" alt="" width={120} height={34} className="h-8 w-auto opacity-40" />
               <p className="text-[9px] tracking-[0.3em] uppercase text-[#4a2525]">© 2024 Rogue Ninja</p>
             </motion.div>
           </motion.div>

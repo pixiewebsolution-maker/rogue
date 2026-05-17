@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       "Every image tells a story of sacrifice and excellence. Real fighters, real training, real results at RogueNinja FC, Thiruvananthapuram.",
     url: "https://rogueninja.in/gallery",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "RogueNinja FC Gallery" }],
+    images: [{ url: "/og-image.webp", width: 1200, height: 630, alt: "RogueNinja FC Gallery" }],
   },
 };
 

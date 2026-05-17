@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       "3 branches across Thiruvananthapuram. Walk in for a FREE trial class. Call or WhatsApp us today — no prior experience needed.",
     url: "https://rogueninja.in/contact",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Contact RogueNinja FC" }],
+    images: [{ url: "/og-image.webp", width: 1200, height: 630, alt: "Contact RogueNinja FC" }],
   },
 };
 

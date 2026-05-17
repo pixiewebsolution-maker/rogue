@@ -84,7 +84,7 @@ export default function WhyChooseSection() {
       {/* Background Image with overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/ai_fighters.png"
+          src="/ai_fighters.webp"
           fill
           alt="Why Choose RogueNinja"
           className="object-cover object-center opacity-10"
@@ -148,7 +148,7 @@ export default function WhyChooseSection() {
         {/* Bottom accent image strip */}
         {/* <div className="mt-20 relative w-full aspect-[21/5] rounded-sm overflow-hidden border border-[#1a0f2e]">
           <Image
-            src="/ai_sparring.png"
+            src="/ai_sparring.webp"
             fill
             alt="Champion Training"
             className="object-cover object-center transition-transform duration-700 hover:scale-105"

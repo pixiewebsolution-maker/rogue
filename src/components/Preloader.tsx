@@ -202,7 +202,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
           {/* Flicker wrapper */}
           <div className="relative logo-flicker w-full flex justify-center">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Rogue Ninja Fight Club"
               width={640}
               height={180}

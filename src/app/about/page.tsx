@@ -52,7 +52,7 @@ export default function AboutPage() {
             </ul>
           </div>
           <div className="order-1 md:order-2 relative aspect-[4/3] rounded-sm overflow-hidden border border-[#1e0707]">
-            <Image src="/exclusive.jpeg" fill alt="Head Coach" className="object-cover transition-transform duration-700 hover:scale-105" sizes="(max-width: 768px) 100vw, 50vw" />
+            <Image src="/exclusive.webp" fill alt="Head Coach" className="object-cover transition-transform duration-700 hover:scale-105" sizes="(max-width: 768px) 100vw, 50vw" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#060404] to-transparent opacity-80" />
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
 
         {/* Final Wide Image */}
         <div className="relative w-full aspect-[21/9] sm:aspect-[3/1] rounded-sm overflow-hidden mt-20 border border-[#1e0707]">
-          <Image src="/brotherhood.jpeg" fill alt="The Team" className="object-cover transition-transform duration-700 hover:scale-110" sizes="100vw" />
+          <Image src="/brotherhood.webp" fill alt="The Team" className="object-cover transition-transform duration-700 hover:scale-110" sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(6,4,4,0.3)] to-[#060404]" />
           <div className="absolute bottom-6 sm:bottom-10 left-0 w-full text-center px-4">
             <h3 className="text-xl sm:text-3xl font-display text-white uppercase tracking-widest">

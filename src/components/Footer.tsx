@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="relative border-t border-[#1a0f2e] py-10 px-5 sm:px-8 lg:px-12 overflow-hidden bg-[#08050f]">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
         <Image
-          src="/logo.png"
+          src="/logo.webp"
           alt="Rogue Ninja Fight Club"
           width={110}
           height={30}

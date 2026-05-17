@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       "From a single dojo to Kerala's dominant combat sports force. Meet our champion coaches and discover what makes RogueNinja FC the standard.",
     url: "https://rogueninja.in/about",
-    images: [{ url: "/newLogo.PNG", width: 1200, height: 630, alt: "Rogue Ninja Fight Club — About Us" }],
+    images: [{ url: "/newLogo.webp", width: 1200, height: 630, alt: "Rogue Ninja Fight Club — About Us" }],
   },
 };
 

@@ -29,7 +29,7 @@ export default function CTABanner() {
     <section ref={sectionRef} className="relative py-20 sm:py-24 lg:py-28 px-5 overflow-hidden min-h-[70vh] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/ctaBg.jpeg')] bg-cover bg-center opacity-40 blur-[2px] transition-transform duration-1000 scale-105 hover:scale-100" />
+        <div className="absolute inset-0 bg-[url('/ctaBg.webp')] bg-cover bg-center opacity-40 blur-[2px] transition-transform duration-1000 scale-105 hover:scale-100" />
       </div>
 
       <div className="absolute inset-0 pointer-events-none glow-pulse z-[1]"

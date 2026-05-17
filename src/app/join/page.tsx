@@ -139,7 +139,7 @@ export default function JoinPage() {
       <section ref={heroRef} className="relative w-full min-h-[55vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/ai_boxing_ring.png" fill
+            src="/ai_boxing_ring.webp" fill
             alt="Step into the ring"
             className="object-cover object-center opacity-35"
             sizes="100vw" priority
